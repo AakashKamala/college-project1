@@ -15,7 +15,7 @@ const server=http.createServer(app)
 
 const io=socketIo(server, {
     cors: {
-      origin: process.env.CLIENT_URL || ['http://localhost:5173', "https://z304rnx4-5173.inc1.devtunnels.ms"],
+      origin: process.env.CLIENT_URL || ['http://localhost:5173', "https://z304rnx4-5173.inc1.devtunnels.ms", "https://llively.netlify.app"],
       methods: ["GET", "POST"],
       credentials: true,
   },
